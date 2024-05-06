@@ -1,0 +1,143 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .table-container {
+            width: 80%;
+            margin: 0 auto; 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center; 
+        }
+
+        th, td {
+            padding: 10px; 
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50; 
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2; 
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Color Code</th>
+                    <th>Count</th>
+                    <th>Exists</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@ViewBag.Name</td>
+                    <td>@ViewBag.Price</td>
+                    <td>@ViewBag.ColorCode</td>
+                    <td>@ViewBag.Count</td>
+                    <td>@ViewBag.Exists</td>
+                </tr>
+                <tr>
+                    <td>@ViewBag.Name</td>
+                    <td>@ViewBag.Price</td>
+                    <td>@ViewBag.ColorCode</td>
+                    <td>@ViewBag.Count</td>
+                    <td>@ViewBag.Exists</td>
+                </tr>
+                <tr>
+                    <td>@ViewBag.Name</td>
+                    <td>@ViewBag.Price</td>
+                    <td>@ViewBag.ColorCode</td>
+                    <td>@ViewBag.Count</td>
+                    <td>@ViewBag.Exists</td>
+                </tr>
+                <tr>
+                    <td>@ViewBag.Name</td>
+                    <td>@ViewBag.Price</td>
+                    <td>@ViewBag.ColorCode</td>
+                    <td>@ViewBag.Count</td>
+                    <td>@ViewBag.Exists</td>
+                </tr>
+                <tr>
+                    <td>@ViewBag.Name</td>
+                    <td>@ViewBag.Price</td>
+                    <td>@ViewBag.ColorCode</td>
+                    <td>@ViewBag.Count</td>
+                    <td>@ViewBag.Exists</td>
+                </tr>
+                <tr>
+                    <td>@ViewBag.Name</td>
+                    <td>@ViewBag.Price</td>
+                    <td>@ViewBag.ColorCode</td>
+                    <td>@ViewBag.Count</td>
+                    <td>@ViewBag.Exists</td>
+                </tr>
+                <tr>
+                    <td>@ViewBag.Name</td>
+                    <td>@ViewBag.Price</td>
+                    <td>@ViewBag.ColorCode</td>
+                    <td>@ViewBag.Count</td>
+                    <td>@ViewBag.Exists</td>
+                </tr>
+                <tr>
+                    <td>@ViewBag.Name</td>
+                    <td>@ViewBag.Price</td>
+                    <td>@ViewBag.ColorCode</td>
+                    <td>@ViewBag.Count</td>
+                    <td>@ViewBag.Exists</td>
+                </tr>
+                <tr>
+                    <td>@ViewBag.Name</td>
+                    <td>@ViewBag.Price</td>
+                    <td>@ViewBag.ColorCode</td>
+                    <td>@ViewBag.Count</td>
+                    <td>@ViewBag.Exists</td>
+                </tr>
+                <tr>
+                    <td>@ViewBag.Name</td>
+                    <td>@ViewBag.Price</td>
+                    <td>@ViewBag.ColorCode</td>
+                    <td>@ViewBag.Count</td>
+                    <td>@ViewBag.Exists</td>
+                </tr>
+                <!-- Repeat until 10 rows -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
